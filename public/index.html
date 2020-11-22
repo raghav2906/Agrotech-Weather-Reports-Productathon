@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agrotech</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!--Animate On Scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    </head>
+    <body>
+        <header>
+            Weather Reports
+        </header>
+        <div class="about" data-aos="fade-up">
+            <p>This webpage helps a person to check the real time weather condition of a provided region and also get a list of some crops that will be suitable for growth in that area according to temoerature and humidity level of that region. 
+            </p>
+        </div>
+        <div class="main"data-aos="fade-up">
+            <h1 style="margin-left:50px ;">Search for a given location</h1>
+            <form>
+                <label>Enter the location for which you want weather reports</label>
+                <input type="text" placeholder="Location">
+                <button>Search</button>
+            </form>
+
+        </div>
+        <div class="IMG" >
+            <h1 style="font-size: 3.5rem;">LOADING ...</h1>
+            
+        </div>
+            <div class="content nondi" data-aos="fade-up">
+
+            
+                <div class="parts" >
+                    <h3>Location</h3>
+                    <p id='message-1'></p>
+                </div>
+                <div class="parts">
+                    <h3>Current Climate</h3>
+                    <p id='message-2'></p>
+                </div>
+                <div class="parts">
+                    <h3>current date and time</h3>
+                    <p id="message-3"></p>
+                </div>
+            
+                <div class="parts">
+                    <h3>Temperature</h3>
+                    <p id='message-4'></p>
+                </div>
+                <div class="parts">
+                    <h3>Humidity</h3>
+                    <p id="message-8"></p>
+                </div>
+                <div class="parts">
+                    <h3>Cloudscover</h3>
+                    <p id='message-9'></p>
+                </div>
+            
+                <div class="parts">
+                    <h3>Visibilty</h3>
+                    <p id="message-10"></p>
+                </div>
+                
+            </div>
+
+        <div class="cropcanbe di" >
+            <h4 id='crop14'></h4>
+            <p id="crop0"></p>
+            <p id="crop1"></p>
+            <p id="crop2"></p>
+            <p id="crop3"></p>
+            <p id="crop4"></p>
+            <p id="crop5"></p>
+            <p id="crop6"></p>
+            <p id="crop7"></p>
+            <p id="crop8"></p>
+            <p id="crop9"></p>
+            <p id="crop10"></p>
+            <p id="crop11"></p>
+            <p id="crop12"></p>
+            <p id="crop13"></p>
+        </div>    
+            
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset:400,
+                duration: 1000
+            });
+            
+          </script>
+        
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
